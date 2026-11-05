@@ -9,12 +9,13 @@
 </head>
 <body>
     <?php
-    include("menu.php");
+    include("../menu.php");
     ?>
     <div class="container">
-        <h1>Bem vindo a ampresa</h1>
-        <hr>
-        <h3>Escolha a operação no menu superior</h3>
+        <form action="inserir.php" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" require>
+        </form>
     </div>
 </body>
 </html>
