@@ -7,10 +7,7 @@ $senha="";
 $bd="empresa";
 //chamar o comando para conectar
 $conexao=mysqli_connect($servidor,$usuario,$senha,$bd);
-if ($conexao){
-    echo "Conexão realizada com sucesso.";
-}
-else {
-    echo mysqli_error($conexao);
+if (!$conexao){
+    die("Erro na conexão: " . mysqli_connect_error());
 }
 ?>

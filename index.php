@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include("../menu.php");
+    include("menu.php");
     ?>
     <div class="container">
         <form action="inserir.php" method="POST">
